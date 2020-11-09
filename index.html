@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+
+<div id="adobe-dc-view" style="width: 800px;"></div>
+
+
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+   document.addEventListener("adobe_dc_view_sdk.ready", function(){
+     var adobeDCView = new AdobeDC.View({clientId: "<7a198f15de234fb1b0668ddd61c6f67d>", divId: "adobe-dc-view"});
+   adobeDCView.previewFile({
+     content:{location: {url: "https://github.com/onthereadyfreddy/mercury/blob/gh-pages/class_library.pdf"}},
+     metaData:{fileName: "Class Library.pdf"}
+
+
+}, {embedMode: "IN_LINE"});
+
+
+});
+</script>
+
+
+
+
+
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<p>Edit the code in the window to the left, and click "Run" to view the result.</p>
+<img src="avatar.png" alt="Avatar" style="width:200px">
+
+
+</body>
+</html>
